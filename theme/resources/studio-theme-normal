@@ -1,0 +1,754 @@
+/* This will apply to all widgets */
+QWidget {
+    background: rgb(156, 156, 156);
+    color: black;
+}
+
+
+/* ComboBox begin */
+QComboBox {
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                                     stop:0 rgb(230, 230, 230)
+
+                                    stop:0.1 rgb(188, 188, 188)
+                                    stop: 0.9 rgb(146, 146, 146)
+                                    stop:1 rgb(180, 180, 180));
+
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 3px;
+  padding: 0px 0px 1px 10px;
+  min-width: 50px;
+  min-height: 20px;
+}
+
+QComboBox::drop-down {
+   border-left-width: 1px;
+   border-left-color: rgb(97, 97, 97);
+	border-left-style: solid;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+   width: 25px;
+   subcontrol-origin: padding;
+   subcontrol-position: top right;
+
+}
+
+QComboBox::down-arrow {
+  image: url(:themes/normal/icons/combo-arrow.png);
+}
+/* ComboBox end */
+
+
+/* CheckBox begin */
+QCheckBox {
+   spacing: 5px;
+}
+
+QCheckBox::indicator {
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                                     stop:0 rgb(240, 240, 240)
+                                    stop:0.2 rgb(188, 188, 188)
+                                    stop: 0.85 rgb(146, 146, 146)
+                                    stop:1 rgb(180, 180, 180));
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 3px;
+  width: 12px;
+  height: 12px;
+}
+
+QCheckBox::indicator::checked {
+  /*image:  url(:themes/normal/checked.png);*/
+}
+/* CheckBox end */
+
+
+/* QDockWidget begin */
+QDockWidget {
+    text-align: center;
+}
+/* QDockWidget end */
+
+
+/* HeaderView begin */
+QHeaderView::section {
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                                      stop: 0 rgb(220, 220, 220)
+                                      stop: .1 rgb(182, 182, 182)
+                                     stop: 0.9 rgb(158, 158, 158)
+                                     stop: 1 rgb(114, 114, 114));
+  border: 1px solid rgb(114, 114, 114);
+  border-left: 1px solid rgb(114, 114, 114);
+  border-top: 1px solid rgb(157, 157, 157);
+  border-right: 1px solid rgb(157, 157, 157);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding-left: 10;
+}
+
+QHeaderView::down-arrow {
+   image: url(:themes/normal/icons/combo-arrow.png);
+}
+
+QHeaderView::up-arrow {
+   image: url(:themes/normal/icons/combo-arrow.png);
+}
+/* HeaderView end */
+
+
+/* LineEdit begin */
+QLineEdit {
+   border: 1px solid rgb(114, 114, 114);
+   border-radius: 3px;
+   padding: 0 2px;
+   background: rgb(230, 230, 230);
+   color: rgb(25, 25, 25);
+   selection-background-color: darkgray;
+}
+/* LineEdit end */
+
+
+/* ListView begin */
+QListView {
+  background: rgb(194, 194, 194);
+  color: rgb(25, 25, 25);
+  border: 1px solid rgb(114, 114, 114);
+}
+
+QListView::item {
+   border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+QListView::item:selected {
+  background: rgb(87, 87, 87);
+  color: silver;
+}
+/* ListView end */
+
+
+/* MainWindow begin */
+QMainWindow::separator {
+    background: rgb(156, 156, 156);
+    width: 5px;
+    height: 5px;
+}
+/* MainWindow end */
+
+
+/* MenuBar begin */
+QMenuBar {
+   background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                     stop:0 lightgray, stop:1 darkgray);
+}
+
+QMenuBar::item {
+   padding: 1px 8px;
+   background: transparent;
+   color: black;
+}
+
+QMenuBar::item:pressed {
+   background:darkgray;
+}
+
+
+/* MenuBar end */
+
+
+/* PushButton begin */
+QPushButton {
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                                     stop:0 rgb(230, 230, 230)
+                                    stop:0.1 rgb(188, 188, 188)
+                                    stop: 0.9 rgb(146, 146, 146)
+                                    stop:1 rgb(180, 180, 180));
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 3px;
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                                                          stop:0  rgb(80, 80, 80)
+                                                         stop:0.1 rgb(150, 150, 150)
+                                                         stop: 0.9  rgb(150, 150, 150)
+                                                         stop:1 rgb(80, 80, 80));
+  border-style: inset;
+}
+/* PushButton end */
+
+
+/* RadioButton begin */
+QRadioButton{
+   spacing: 5px;
+}
+/* RadioButton end */
+
+
+/* Scrollbar begin */
+QScrollBar {
+  background: rgb(77, 77, 77);
+}
+
+/* Thumb */
+QScrollBar:horizontal {
+  height: 15px;
+  margin: 0px 15px 0px 15px;
+}
+
+QScrollBar::handle:horizontal {
+  background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0,  
+y2: 1,
+                                     stop: 0 rgb(200, 200, 200)
+                                     stop: 0.1 rgb(179, 179, 179)
+                                    stop: 0.9 rgb(141, 141, 141)
+                                    stop: 1 rgb(80, 80, 80));
+  min-width: 15px;
+  border-left: 1px  solid rgb(92, 92, 92);
+  border-right: 1px  solid rgb(92, 92, 92);
+  border-bottom: 1px  solid rgb(92, 92, 92);
+  border-radius: 2px;
+}
+
+QScrollBar::handle:horizontal:disabled {
+background-color: rgb(174, 174, 174);
+  border: 1px  solid rgb(141, 141, 141);
+  min-width: 15px;
+  border-radius: 2px;
+}
+
+QScrollBar::sub-line:horizontal {
+  background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0,  
+y2: 1,
+                                     stop: 0 rgb(200, 200, 200)
+                                     stop: 0.1 rgb(179, 179, 179)
+                                    stop: 0.9 rgb(141, 141, 141)
+                                    stop: 1 rgb(80, 80, 80));
+  border-left: 1px  solid rgb(92, 92, 92);
+  border-right: 1px  solid rgb(92, 92, 92);
+  border-bottom: 1px  solid rgb(92, 92, 92);
+   border-top-left-radius: 3px;
+   border-bottom-left-radius: 3px;
+  width: 14px;
+  subcontrol-position: left;
+  subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal:disabled {
+background-color: rgb(174, 174, 174);
+  border: 1px  solid rgb(141, 141, 141);
+   border-top-left-radius: 3px;
+   border-bottom-left-radius: 3px;
+  width: 14px;
+  subcontrol-position: left;
+  subcontrol-origin: margin;
+}
+
+
+
+QScrollBar::left-arrow:horizontal {
+  image: url(:themes/normal/icons/subline-horz.png);
+}
+
+QScrollBar::sub-page:horizontal {
+  background-color:  qlineargradient(spread: pad, x1:0, y1:0, x2:0,  
+y2:1,
+                                     stop: 0 rgb(90, 90, 90)
+                                     stop: 0.9 rgb(117, 117, 117)
+                                     stop: 1 rgb(160, 160, 160));
+}
+
+QScrollBar::add-page:horizontal {
+  background-color:  qlineargradient(spread: pad, x1:0, y1:0, x2:0,  
+y2:1,
+                                     stop: 0 rgb(90, 90, 90)
+                                     stop: 0.9 rgb(117, 117, 117)
+                                     stop: 1 rgb(160, 160, 160));
+}
+
+QScrollBar::sub-page:horizontal:disabled {
+  background-color: rgb(137, 137, 137);
+}
+
+QScrollBar::add-page:horizontal:disabled {
+  background-color: rgb(137, 137, 137);
+}
+
+QScrollBar::add-line:horizontal {
+  background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 0,  
+y2: 1,
+                                     stop: 0 rgb(200, 200, 200)
+                                     stop: 0.1 rgb(179, 179, 179)
+                                    stop: 0.9 rgb(141, 141, 141)
+                                    stop: 1 rgb(80, 80, 80));
+  border-right: 1px solid rgb(92, 92, 92);
+  border-left: 1px solid rgb(92, 92, 92);
+  border-bottom: 1px solid rgb(92, 92, 92);
+  border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+  width: 14px;
+  subcontrol-position: right;
+  subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:horizontal:disabled {
+background-color: rgb(174, 174, 174);
+  border: 1px  solid rgb(141, 141, 141);
+  border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+  width: 14px;
+  subcontrol-position: right;
+  subcontrol-origin: margin;
+}
+
+
+QScrollBar::right-arrow:horizontal {
+  image: url(:themes/normal/icons/addline-horz.png);
+  padding-left: 1px;
+}
+
+QScrollBar::add-line:horizontal:pressed {
+  background: rgb(80, 80, 80);
+}
+
+QScrollBar::sub-line:horizontal:pressed {
+  background: rgb(80, 80, 80);
+}
+
+QScrollBar:vertical {
+  width: 15px;
+  margin: 15px 0px 15px 0px;
+}
+
+QScrollBar::handle:vertical {
+  background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 1,  
+y2: 0,
+                                     stop: 0 rgb(200, 200, 200)
+                                     stop: 0.1 rgb(179, 179, 179)
+                                    stop: 0.9 rgb(141, 141, 141)
+                                    stop: 1 rgb(80, 80, 80));
+  min-height: 15px;
+  border-top: 1px  solid rgb(80, 80, 80);
+  border-right: 1px  solid rgb(80, 80, 80);
+  border-bottom: 1px  solid rgb(80, 80, 80);
+  border-radius: 2px;
+}
+
+QScrollBar::handle:vertical:disabled {
+background-color: rgb(174, 174, 174);
+  border: 1px  solid rgb(141, 141, 141);
+  min-height: 15px;
+  border-radius: 3px;
+}
+
+QScrollBar::sub-line:vertical {
+  background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 1,  
+y2: 0,
+                                     stop: 0 rgb(200, 200, 200)
+                                     stop: 0.1 rgb(179, 179, 179)
+                                    stop: 0.9 rgb(141, 141, 141)
+                                    stop: 1 rgb(80, 80, 80));
+  border-right: 1px  solid rgb(92, 92, 92);
+  border-top: 1px  solid rgb(92, 92, 92);
+  border-bottom: 1px  solid rgb(92, 92, 92);
+   border-top-left-radius: 3px;
+   border-top-right-radius: 3px;
+  height: 14px;
+  subcontrol-position: top;
+  subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical {
+  background-color: qlineargradient(spread:pad, x1: 0, y1: 0, x2: 1,  
+y2: 0,
+                                     stop: 0 rgb(200, 200, 200)
+                                     stop: 0.1 rgb(179, 179, 179)
+                                    stop: 0.9 rgb(141, 141, 141)
+                                    stop: 1 rgb(80, 80, 80));
+  border-right: 1px  solid rgb(92, 92, 92);
+  border-top: 1px  solid rgb(92, 92, 92);
+  border-bottom: 1px  solid rgb(92, 92, 92);
+   border-bottom-left-radius: 3px;
+   border-bottom-right-radius: 3px;
+  height: 14px;
+  subcontrol-position: bottom;
+  subcontrol-origin: margin;
+}
+
+QScrollBar::sub-page:vertical {
+  background-color:  qlineargradient(spread: pad, x1:0, y1:0, x2:1,  
+y2:0,
+                                     stop: 0 rgb(90, 90, 90)
+                                     stop: 0.9 rgb(117, 117, 117)
+                                     stop: 1 rgb(160, 160, 160));
+}
+
+QScrollBar::add-page:vertical {
+  background-color:  qlineargradient(spread: pad, x1:0, y1:0, x2:1,  
+y2:0,
+                                     stop: 0 rgb(90, 90, 90)
+                                     stop: 0.9 rgb(117, 117, 117)
+                                     stop: 1 rgb(160, 160, 160));
+}
+
+QScrollBar::sub-line:vertical:disabled {
+background-color: rgb(174, 174, 174);
+  border: 1px  solid rgb(141, 141, 141);
+   border-top-left-radius: 3px;
+   border-top-right-radius: 3px;
+  height: 14px;
+  subcontrol-position: top;
+  subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical:disabled {
+background-color: rgb(174, 174, 174);
+  border: 1px  solid rgb(141, 141, 141);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  height: 14px;
+  subcontrol-position: bottom;
+  subcontrol-origin: margin;
+}
+
+
+QScrollBar::sub-page:vertical:disabled {
+  background-color: rgb(137, 137, 137);
+}
+
+QScrollBar::add-page:vertical:disabled {
+  background-color: rgb(137, 137, 137);
+}
+
+QScrollBar::down-arrow:vertical {
+  image: url(:themes/normal/icons/addline-vert.png);
+}
+
+
+QScrollBar::up-arrow:vertical {
+  image: url(:themes/normal/icons/subline-vert.png);
+}
+
+QScrollBar::add-line:vertical:pressed {
+  background: rgb(80, 80, 80);
+}
+
+QScrollBar::sub-line:vertical:pressed {
+  background: rgb(80, 80, 80);
+}
+
+/* Scrollbar end */
+
+
+/* Slider begin */
+QSlider::groove:horizontal {
+   border-left: 1px solid rgb(97, 97, 97);
+   border-top: 1px solid rgb(80, 80, 80);
+   border-bottom: 1px solid rgb(107, 107, 107);
+   border-right: 1px solid rgb(97, 97, 97);
+   border-radius: 3px;
+   height: 4px;
+   background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                                stop:0 rgb(100, 100, 100)
+                                                stop:1 rgb(140, 140,  140));
+margin: 2px 0;
+}
+
+QSlider::handle:horizontal {
+ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                                     stop:0 rgb(240, 240, 240)
+                                    stop:0.3 rgb(188, 188, 188)
+                                    stop: 0.8 rgb(146, 146, 146)
+                                    stop:1 rgb(180, 180, 180));
+  border: 1px solid rgb(97, 97, 97);
+   width: 14px;
+   margin: -2px 0; /* handle is placed by default on the contents rect  of the groove. Expand outside the groove */
+   border-radius: 8px;
+}
+
+QSlider::groove:vertical {
+   border-left: 1px solid rgb(80, 80, 80);
+   border-right: 1px solid rgb(107, 107, 107);
+   border-top: 1px solid rgb(97, 97, 97);
+   border-bottom: 1px solid rgb(97, 97, 97);
+   background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                                stop:0 rgb(100, 100, 100)
+                                                stop:1 rgb(140, 140,  140));
+border-radius: 3px;
+width: 4px;
+   margin: 0px 2px;
+}
+
+QSlider::handle:vertical {
+ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                                     stop:0 rgb(240, 240, 240)
+                                    stop:0.3 rgb(188, 188, 188)
+                                    stop: 0.8 rgb(146, 146, 146)
+                                    stop:1 rgb(180, 180, 180));
+  border: 1px solid rgb(97, 97, 97);
+   height: 14px;
+   width: 14px;
+   margin: 0px -2px;
+   border-radius: 8px;
+}
+/* Slider end */
+
+
+/* SpinBox begin */
+QSpinBox {
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                                                          stop:0  
+rgb(80, 80, 80)
+                                                          stop:0.15  
+rgb(166, 166, 166)
+                                                          stop:0.9  
+rgb(166, 166, 166)
+                                                         stop:1  
+rgb(230, 230, 230));
+color: rgb(25, 25, 25);
+  border-left: 1px solid rgb(60, 60, 60);
+border-top: 1px solid rgb(39, 39, 39);
+border-bottom: 1px solid rgb(70, 70, 70);
+border-right: 1px solid rgb(60, 60, 60);
+border-radius: 9px;
+height: 20;
+  padding-right: 10px; /* make room for the arrows */
+  padding-left: 10px;  /* make room for the arrows */
+}
+
+
+QSpinBox::down-button {
+  subcontrol-origin: border;
+  subcontrol-position: left;
+  border-width: 1px;
+}
+
+QSpinBox::up-button {
+   subcontrol-origin: border;
+   subcontrol-position: right;
+  border-width: 1px;
+}
+
+
+QSpinBox::down-arrow {
+   image: url(:themes/normal/icons/subspin-arrow.png);
+}
+
+QSpinBox::up-arrow {
+   image: url(:themes/normal/icons/addspin-arrow.png);
+}
+/* SpinBox end */
+
+
+/* DoubleSpinBox begin */
+QDoubleSpinBox  {
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                                                          stop:0  
+rgb(80, 80, 80)
+                                                          stop:0.15  
+rgb(166, 166, 166)
+                                                          stop:0.9  
+rgb(166, 166, 166)
+                                                         stop:1  
+rgb(230, 230, 230));
+color: rgb(25, 25, 25);
+  border-left: 1px solid rgb(60, 60, 60);
+border-top: 1px solid rgb(39, 39, 39);
+border-bottom: 1px solid rgb(70, 70, 70);
+  border-right: 1px solid rgb(60, 60, 60);
+border-radius: 9px;
+height: 20;
+  padding-right: 20px; /* make room for the arrows */
+  padding-left: 20px;  /* make room for the arrows */
+}
+
+
+QDoubleSpinBox ::down-button {
+  subcontrol-origin: border;
+   subcontrol-position: left;
+  background: red;
+  border-width: 1px;
+}
+
+QDoubleSpinBox ::up-button {
+   subcontrol-origin: border;
+   subcontrol-position: right;
+  border-width: 1px;
+}
+
+QDoubleSpinBox ::down-arrow {
+   image: url(:themes/normal/icons/subspin-arrow.png);
+}
+
+QDoubleSpinBox ::up-arrow {
+   image: url(:themes/normal/icons/addspin-arrow.png);
+}
+
+/* DoubleSpinBox end */
+
+
+
+/* TabWidget begin */
+QTabWidget::pane {
+  margin-top: 10px;
+  border: 1px solid rgb(80, 80, 80);
+}
+
+QTabWidget::tab-bar {
+  left: 5px;
+}
+
+/* Style the tab using the tab sub-control. Note that it reads QTabBar  
+_not_ QTabWidget */
+QTabBar::tab {
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                              stop: 0 rgb(20, 20, 20)
+                              stop:.1 rgb(120, 120, 120)
+                              stop:.13 rgb(130, 130, 130)
+                              stop:.14 rgb(140, 140, 140)
+                              stop: .9 rgb(140, 140, 140)
+                              stop: 1 rgb(100, 100, 100));
+  border: 1px solid rgb(200, 200, 200);
+  border-right-color: rgb(80, 80, 80);
+  border-bottom-color: rgb(80, 80, 80);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: rgb(25, 25, 25);
+  min-width: 8ex;
+  height: 18px;
+  padding: 2px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+
+QTabBar::tab:first {
+  border-right: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 0px;
+  border-left-color: rgb(80, 80, 80);
+  }
+
+QTabBar::tab:first:selected {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border: 1px solid rgb(80, 80, 80);
+border-bottom-color: rgb(156, 156, 156);
+  }
+
+QTabBar::tab:last {
+  border-left: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 6px;
+  }
+
+
+QTabBar::tab::selected {
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                              stop: 0 rgb(230, 230, 230)
+                              stop: 0.55 rgb(170, 170, 170)
+                              stop: .6 rgb(156, 156, 156));
+    border: 1px solid rgb(80, 80, 80);
+    border-bottom-color: rgb(156, 156, 156);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+QTabBar::tab::!selected {
+  margin-top: 0px; /* Make non-selected tabs look smaller */
+}
+/* TabWidget end */
+
+
+
+/* TextEdit begin */
+QTextEdit {
+   border: 1px solid rgb(114, 114, 114);
+   border-radius: 3px;
+   background: rgb(230, 230, 230);
+   color: rgb(25, 25, 25);
+   selection-background-color: darkgray;
+}
+/* TextEdit end */
+
+
+/* ToolButton begin */
+QToolButton {
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                                     stop:0 rgb(230, 230, 230)
+                                    stop:0.1 rgb(188, 188, 188)
+                                    stop: 0.9 rgb(146, 146, 146)
+                                    stop:1 rgb(180, 180, 180));
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 3px;
+    width: 43;
+}
+
+
+QToolButton:pressed {
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                                                          stop:0  rgb(80, 80, 80)
+                                                         stop:0.1 rgb(150, 150, 150)
+                                                         stop: 0.9  rgb(150, 150, 150)
+                                                         stop:1 rgb(80, 80, 80));
+  border-style: inset;
+}
+
+QToolButton::menu-indicator {
+     subcontrol-origin: padding;
+     subcontrol-position: center right;
+}
+ /* ToolButton end */
+
+
+/* TreeView begin */
+QTreeView {
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 3px;
+    background: rgb(194, 194, 194);
+    color: rgb(25, 25, 25);
+    selection-background-color: darkgray;
+}
+
+
+QTreeView { 
+}
+
+ QTreeView::item {
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom: 1px solid rgb(212, 212, 212);
+ }
+
+QTreeView::item:selected {
+    background: darkgray;
+}
+
+QTreeView::item:branch {
+    image:none; border-image:none
+}
+
+
+QTreeView::branch:open:has-children:has-siblings { 
+    border-image: none; background-image: none; 
+} 
+
+QTreeView::branch:has-siblings:!adjoins-item { 
+    border-image:none; 
+}
+ 
+QTreeView::branch:has-siblings:adjoins-item { 
+    border-image:none; 
+} 
+
+QTreeView::branch:has-children:!has-siblings:closed, QTreeView::branch:closed:has-children:has-siblings { 
+    border-image: none; image: 
+    url(:themes/normal/icons/branch_closed.png) 0; 
+} 
+
+QTreeView::branch:open:has-children:!has-siblings, QTreeView::branch:open:has-children:has-siblings { 
+    border-image: none; image: url(:themes/normal/icons/branch_open.png) 0; 
+}
+
+/* TreeView end */
+

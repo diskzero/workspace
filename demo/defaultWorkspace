@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="workbench_default_layout">
+    <grid columns="2" rows="2"/>
+    <groups count="3">
+        <group name="" gridx="0" gridy="0" gridwidth="1" gridheight="1" x="2" y="2" width="571" height="425" active="1">
+            <panel name="One"/>
+            <panel name="Two"/>
+        </group>
+        <group name="" gridx="1" gridy="0" gridwidth="1" gridheight="1" x="579" y="2" width="612" height="425" active="2">
+            <panel name="Panel 1"/>
+            <panel name="Panel 2"/>
+            <panel name="Panel 3"/>
+        </group>
+        <group name="" gridx="0" gridy="1" gridwidth="2" gridheight="1" x="2" y="433" width="1189" height="425" active="0">
+            <panel name="Three"/>
+        </group>
+    </groups>
+    <floaters count="0"/>
+</layout>

@@ -1,0 +1,18 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>images/copy.png</file>
+    <file>images/cut.png</file>
+    <file>images/new.png</file>
+    <file>images/open.png</file>
+    <file>images/paste.png</file>
+    <file>images/save.png</file>
+
+    <file alias="defaultWorkspace" >./defaultWorkspace</file>
+
+    <file alias="themes/normal/cursors/panel_move.bmp">../theme/resources/cursor_panel_move.bmp</file>
+    <file alias="themes/normal/cursors/panel_move_mask.bmp">../theme/resources/cursor_panel_move_mask.bmp</file>
+    <file alias="themes/normal/icons/close-normal.png">../theme/resources/close-normal.png</file>
+    <file alias="themes/normal/icons/close-rollover.png">../theme/resources/close-rollover.png</file>
+    <file alias="themes/normal/icons/close-pressed.png">../theme/resources/close-pressed.png</file>
+</qresource>
+</RCC>
